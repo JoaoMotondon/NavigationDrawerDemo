@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_drawer_home_item"
+            android:checked="true"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/nav_drawer_my_location_item"
+            android:icon="@drawable/ic_my_location_black_24dp"
+            android:title="My Location" />
+
+        <item
+            android:id="@+id/nav_drawer_sync_data_item"
+            android:icon="@drawable/ic_sync_black_24dp"
+            android:title="Sync Data" />
+
+        <item
+            android:id="@+id/nav_drawer_cloud_upload_item"
+            android:icon="@drawable/ic_cloud_upload_black_24dp"
+            android:title="Cloud Upload" />
+
+        <item android:title="Shortcuts">
+            <menu>
+                <item
+                    android:id="@+id/nav_drawer_wifi_item"
+                    android:icon="@drawable/ic_network_wifi_black_24dp"
+                    android:title="Wifi On" />
+
+                <item
+                    android:id="@+id/nav_drawer_bluetooth_item"
+                    android:icon="@drawable/ic_bluetooth_black_24dp"
+                    android:title="Bluetooth On" />
+
+                <item
+                    android:id="@+id/nav_drawer_location_item"
+                    android:icon="@drawable/ic_location_on_black_24dp"
+                    android:title="Location On" />
+            </menu>
+        </item>
+
+        <item android:title="Settings and Notification">
+            <menu>
+                <item
+                    android:id="@+id/nav_drawer_notification_item"
+                    android:icon="@drawable/ic_notifications_off_black_24dp"
+                    android:title="Notification"
+                    app:actionLayout="@layout/action_view_switch" />
+
+                <item
+                    android:id="@+id/nav_help_activity"
+                    android:icon="@drawable/ic_help_black_24dp"
+                    android:title="Help" />
+            </menu>
+        </item>
+
+    </group>
+
+</menu>
